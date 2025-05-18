@@ -10,8 +10,9 @@ services:
       - "4000:3000"
     environment:
       - NODE_ENV=production
-      - MONGODB_URI=mongodb+srv://mahnoor:mahnoor123@bookstore.mcdjg.mongodb.net/?retryWrites=true&w=majority&appName=B>    volumes:
-      - .:/app
+      - MONGODB_URI=mongodb+srv://mahnoor:mahnoor123@bookstore.mcdjg.mongodb.net/?retryWrites=true&w=majority&appName=Bookstore
+    volumes:
+      - ./:/app  
       - /app/node_modules
       - /app/.next
     networks:
