@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   const token = await getToken({ req: request })
   const isAuthenticated = !!token
 
-  // Define protected routes
+  // Define protected route
   const protectedPaths = ["/profile", "/orders", "/wishlist"]
   const isProtectedPath = protectedPaths.some((path) => request.nextUrl.pathname.startsWith(path))
 
