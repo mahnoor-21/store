@@ -1,4 +1,4 @@
-# 1. Use official Node image
+# 1. Use official Node image 
 FROM node:18-alpine
 
 # 2. Set working directory
@@ -19,3 +19,4 @@ EXPOSE 3000
 
 # 7. Start the Next.js app
 CMD ["npm", "start"]
+# add
